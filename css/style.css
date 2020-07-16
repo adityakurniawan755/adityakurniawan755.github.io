@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+}
+
+
+/* navbar */
+.navbar .navbar-brand{
+    font-size: 30px !important;
+}
+.navbar-nav li{
+    padding: 0 15px;
+}
+.navbar-nav li a:hover{
+    color: orange !important;
+}
+
+
+/* carousel */
+#slider{
+    width: 100%;
+}
+.carousel-caption{
+    transform: translateY(-50%);
+    top: 60%;
+    bottom: initial;
+}
+.carousel-caption  h5{
+    font-weight: 600;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+    color: orange;
+}
+
+
+/* about */
+#about{
+    padding-bottom: 40px;
+}
+#about h1{
+    padding: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+#about img{
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+}
+#about p{
+    text-align: justify;
+}
+.profile-pic .img-box{
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box img{
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+.profile-pic .img-box img:hover{
+    filter: grayscale(0);
+}
+.content-pic{
+    margin-top: 30px;
+}
+#about .fab{
+    color: blue;
+    padding: 4px;
+    border-radius: 10px;
+    background: white !important;
+}
+.img-box ul li{
+    display: inline-block;
+    padding: 5px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.img-box ul{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-53%);
+    padding: 10px 0px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.img-box:hover ul{
+    opacity: 1;
+}
+button a{
+    text-decoration: none;
+    color: white !important;
+}
+
+
+/* skills */
+#skills{
+    padding-top: 50px;
+    background-color: rgb(221, 220, 220);
+    padding-bottom: 30px;
+}
+.progress{
+    border-radius: 30px !important;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.softskill p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+/* services */
+#service{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../porfolio/parallax.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#service h1{
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+.icon{
+    font-size: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    padding: 15px;
+    margin: 20px auto;
+}
+#service p{
+    font-size: 13px;
+    margin-top: 20px;
+    font-stretch: condensed;
+    text-align: justify;
+}
+.service-hover .col-md-3:hover{
+    background-color: rgb(11, 11, 219);
+    transition: 0.5s;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+
+/* porfolio */
+#porfolio{
+    background-color: rgb(219, 219, 219);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#porfolio .card{
+    margin-top: 30px;
+}
+#porfolio h1{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+/* contact */
+#contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#contact .row .card-body i{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#contact h1{
+    margin-bottom: 30px;
+}
+#contact ul a{
+    color: black;
+}
+#contact .list-group a:hover{
+    color: orange;
+}
+
+
+
+/* footer */
+#footer{
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+#footer p{
+    padding-top: 30px;
+}
+
+
+
+
+/* Desktop */
+@media (max-width: 991.98px) {
+    #about{
+        padding-bottom: 40px;
+    }
+    #about h1{
+        padding: 30px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+    }
+    #about img{
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+    }
+    #about p{
+        text-align: justify;
+    }
+    .profile-pic .img-box{
+        display: block;
+        position: relative;
+    }
+    .profile-pic .img-box img{
+        filter: grayscale(1);
+        transition: 0.5s;
+    }
+    .profile-pic .img-box img:hover{
+        filter: grayscale(0);
+    }
+    #about .fab{
+        color: blue;
+        padding: 4px;
+        border-radius: 10px;
+        background: white !important;
+    }
+    .img-box ul li{
+        display: inline-block;
+        padding: 5px;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .img-box ul{
+        position: absolute;
+        bottom: 0;
+        left: 47%;
+        transform: translateX(-50%);
+        padding: 10px 0px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .img-box:hover ul{
+        opacity: 1;
+    }
+
+    .img-box ul{
+        position: absolute;
+        bottom: 0;
+        left: 47%;
+        transform: translateX(-50%);
+        padding: 10px 0px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+}
